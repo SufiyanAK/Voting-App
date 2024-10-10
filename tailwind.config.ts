@@ -11,6 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'text-clr': "white",
+        'prime-clr': '#587179',
+      },
+      backgroundImage: {
+        webBg: 'url(/assets/images/web-bg.svg)'
       },
     },
   },
