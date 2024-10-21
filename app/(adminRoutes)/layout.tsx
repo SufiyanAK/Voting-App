@@ -7,8 +7,12 @@ const AdminLayout = ({ children }: {
     return (
         <>
             <Sidenav />
-            <main>
-                {children}
+            <main className="h-full flex-1">
+                <section className='h-full mx-8 flex justify-center items-center'>
+                    <div className='h-[90%] w-full bg-prime-clr bg-opacity-90 rounded-md flex justify-center items-center'>
+                        {children}
+                    </div>
+                </section>
             </main>
         </>
     )
