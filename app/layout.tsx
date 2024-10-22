@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex bg-webBg bg-cover bg-center">
+      <body className="bg-webBg bg-cover bg-center">
         {children}
       </body>
     </html>
