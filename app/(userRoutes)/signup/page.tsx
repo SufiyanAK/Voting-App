@@ -32,7 +32,7 @@ const Signup = () => {
             {
                 loading ? <Loader /> :
                     <div className="w-[28rem] p-8 rounded-md bg-white flex flex-col gap-4 items-center">
-                        <h2 className="text-center text-4xl">Sign Up</h2>
+                        <h2 className="text-center text-4xl">Reister Voter</h2>
                         <form
                             // onSubmit={onLogin} 
                             className="space-y-2 flex flex-col items-center w-full">
@@ -65,7 +65,7 @@ const Signup = () => {
                                     // disabled={buttonDisabled}
                                     className={`bg-prime-clr px-4 py-1 mt-2 text-lg text-white rounded-md`} type="submit"
                                 >
-                                    Sign Up
+                                    Register
                                 </button>
                             </div>
                         </form>

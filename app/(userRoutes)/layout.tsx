@@ -4,7 +4,7 @@ const UserLayout = ({ children }: {
     children: ReactNode
 }) => {
     return (
-        <main className="h-full">
+        <main className="h-full w-full">
             {children}
         </main>
     )
