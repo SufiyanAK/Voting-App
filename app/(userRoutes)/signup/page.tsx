@@ -6,20 +6,25 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 
 interface InitialUserState {
-    username: string
+    name: string
     email: string,
-    password: string
+    address: string
 }
 
 const InitialState: InitialUserState = {
-    username: '',
+    name: '',
     email: '',
-    password: ''
+    address: ''
 }
 
 const Signup = () => {
     const [user, setUser] = useState(InitialState)
     const [loading, setLoading] = useState(true)
+    const [buttonDisabled, setButtonDisabled] = useState<boolean>(true)
+
+    const isValidate = () => {
+        return user.name.trim() && user.email.trim() && user.address.trim()
+    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -32,37 +37,37 @@ const Signup = () => {
             {
                 loading ? <Loader /> :
                     <div className="w-[28rem] p-8 rounded-md bg-white flex flex-col gap-4 items-center">
-                        <h2 className="text-center text-4xl">Reister Voter</h2>
+                        <h2 className="text-center text-4xl">Register Voter</h2>
                         <form
                             // onSubmit={onLogin} 
                             className="space-y-2 flex flex-col items-center w-full">
                             <Input
-                                name="Username"
-                                value={user.username}
-                                type="username"
-                                placeholder="Enter your Username..."
-                                id="username"
-                                event={(e) => { setUser({ ...user, username: e.target.value }) }}
+                                name="Name"
+                                value={user.name}
+                                type="text"
+                                placeholder="Enter your Name..."
+                                id="name"
+                                event={(e) => { setUser({ ...user, name: e.target.value }) }}
                             />
                             <Input
                                 name="Email"
                                 value={user.email}
                                 type="email"
-                                placeholder="Enter your email address..."
+                                placeholder="Enter your email..."
                                 id="email"
                                 event={(e) => { setUser({ ...user, email: e.target.value }) }}
                             />
                             <Input
-                                name="Password"
-                                value={user.password}
-                                type="Password"
-                                placeholder="Enter your Password..."
-                                id="password"
-                                event={(e) => { setUser({ ...user, password: e.target.value }) }}
+                                name="Voter's Address"
+                                value={user.address}
+                                type="text"
+                                placeholder="Enter Public Address..."
+                                id="address"
+                                event={(e) => { setUser({ ...user, address: e.target.value }) }}
                             />
                             <div>
                                 <button
-                                    // disabled={buttonDisabled}
+                                    disabled={buttonDisabled}
                                     className={`bg-prime-clr px-4 py-1 mt-2 text-lg text-white rounded-md`} type="submit"
                                 >
                                     Register

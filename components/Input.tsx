@@ -6,6 +6,7 @@ const Input = ({ type, placeholder, id, value, name, event }: InputProps) => {
                 className="border-2 border-black p-2 rounded-md"
                 id={id}
                 type={type}
+                name={id}
                 placeholder={placeholder}
                 value={value}
                 onChange={event}
