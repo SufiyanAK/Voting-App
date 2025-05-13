@@ -6,6 +6,8 @@ const AdminLayout = ({ children }: {
 }) => {
     return (
         <>
+            <div className="flex h-dvh ">
+
             <Sidenav />
             <main className="h-full flex-1">
                 <section className='h-full mx-8 flex justify-center items-center'>
@@ -14,6 +16,7 @@ const AdminLayout = ({ children }: {
                     </div>
                 </section>
             </main>
+        </div>
         </>
     )
 }

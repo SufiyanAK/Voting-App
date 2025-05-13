@@ -16,8 +16,8 @@ const ImageUploader: FC<ImageUploaderProps> = ({ image, label, title, onImageCha
 
     return (
 
-        <div className="flex items-center justify-center w-full">
-            <div className="flex flex-col items-center w-full">
+        <div className="flex items-center justify-center">
+            <div className="flex flex-col items-center ">
                 <label htmlFor={title} className="w-full text-center">
                     <div className="bg-white border-2 border-dashed border-gray-300 rounded-md w-full h-60 flex items-center justify-center mb-2">
                         {image ? (

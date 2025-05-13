@@ -15,7 +15,7 @@ const CandidateInfo = () => {
         <div className='border-2 border-white w-[90%] h-[90%] rounded-md text-white p-4 space-y-8'>
             <div className='space-x-4 text-center h-fit'>
                 <button className='px-6 py-2 border border-white hover:bg-white hover:text-black text-4xl rounded-md duration-200'>Candidate Registration</button>
-                <button className='px-6 py-2 border border-white hover:bg-white hover:text-black text-4xl rounded-md duration-200'>Candidates List</button>
+                {/* <button className='px-6 py-2 border border-white hover:bg-white hover:text-black text-4xl rounded-md duration-200'>Candidates List</button> */}
             </div>
             <div className='flex flex-col gap-4 border-2 border-white p-4 rounded-md h-4/5'>
                 <div className='flex-1 flex flex-col gap-4 items-center'>

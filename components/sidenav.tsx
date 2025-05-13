@@ -4,8 +4,11 @@ export const Sidenav = () => {
     const navItem = [
         { name: 'voters Info', path: '/voters-info' },
         { name: 'Candidates Info', path: '/candidates-info' },
-        { name: 'Result', path: '/result' },
+        // { name: 'Result', path: '/result' },
         { name: 'Create Election', path: '/create-election' },
+        { name: 'Control Registration', path: '/registration' },
+        { name: 'Control Election', path: '/election-control' },
+
     ]
 
     return (
